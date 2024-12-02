@@ -13,4 +13,4 @@ for TXID in $TXIDS; do
   TOTAL_OUTPUTS=$((TOTAL_OUTPUTS + OUTPUT_COUNT))
 done
 
-echo "Total de outputs criados no bloco $BLOCK_NUMBER: $TOTAL_OUTPUTS"
+echo $TOTAL_OUTPUTS
