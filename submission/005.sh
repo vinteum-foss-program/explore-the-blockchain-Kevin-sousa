@@ -13,4 +13,4 @@ PUBKEY4=0383d12258e3e294a6d7754336f6b4baef992ec4b91694d3460bcb022b11da8cd2
 
 MULTISIG=$(bitcoin-cli createmultisig 1 "[\"$PUBKEY1\", \"$PUBKEY2\", \"$PUBKEY3\", \"$PUBKEY4\"]")
 
-echo $MULTISIG 
+echo $(echo $MULTISIG | jq -r '.address')
